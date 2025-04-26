@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fábrica de Bolos Delícia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #d2691e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+      display: flex;
+    justify-content: space-around;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #d2691e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+      justify-content: space-between;
+    }
+
+    section h2 {
+      color: #d2691e;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    footer {
+      background-color: #d2691e;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    
+    section:first-of-type {
+      background-image: url('https://images.unsplash.com/photo-1608198093002-ad4e00548459?auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #d2691e;
+      padding: 80px 20px;
+    }
+
+    section:first-of-type h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    section:first-of-type p {
+      font-size: 20px;
+    }
+  
+    .galeria img {
+
+      width: 300px;
+      height: 200px;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(248, 0, 0, 0.1);
+        
+      }
+  .galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px; /* Espaçamento entre os bolos */
+}
+
+.item-galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  .legenda {
+     
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+  }
+  .logo-fixa {
+ display: inline-flex;
+    top: 20px;     
+    left: 20px;    
+    width: 150px;  
+    z-index: 1000; 
+  }
+  .botao{
+    background-color: #d2691e;
+    color: white;
+    padding: 10px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+}
+.botao:hover{
+  transition: background-color 0.3s ease;
+    background-color: white;
+    color: #d2691e;
+}
+    </style>
+
+</head>
+<body>
+
+  
+  <header>
+    
+    <nav>
+      <a href="bolos.html"><img src="image/bolosdelicia1semf.png" class="logo-fixa"></a>
+      <ul class="contatos">
+        <li><a href="sobre.html" class="botao">Sobre</a></li>
+        <li><a href="galeria.html" class="botao">Galeria</a></li>
+        <li><a href="contato.html" class="botao">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ 
+  <section>
+    <h2>O sabor que conquista!</h2>
+    <p>Bolos artesanais feitos com amor e ingredientes frescos.</p>
+  </section>
+
+
+  <section id="sobre">
+    <h2>Sobre a Fábrica</h2>
+    <p>Somos especialistas em bolos caseiros, oferecendo receitas tradicionais e inovadoras desde 2010.</p>
+  </section>
+
+  
+  <section >
+    <h2>Nossos Bolos</h2>
+    <div class="galeria">
+      <div class="item-galeria">
+        <img src="image/bolo chocolate morango.png" alt="Bolo de chocolate">
+        <p class="legenda">Bolo de chocolate</p>
+      </div>
+      
+      <div class="item-galeria">
+        <img src="image/bolo murango.png" alt="Bolo de murango">
+        <p class="legenda">Bolo de murango</p>
+      </div>
+      
+      <div class="item-galeria">
+        <img src="image/bolo milho.jpg" alt="bolo de milho">
+        <p class="legenda">Bolo de milho</p>
+      </div>
+    </div>
+    
+  </section>
+
+ 
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <p>Email: contato@fabricadebolosdelicia.com</p>
+    <p>Telefone: (11) 98765-4321</p>
+  </section>
+
+  
+  <footer>
+    <p>&copy; 2025 Fábrica de Bolos Delícia. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
